@@ -1,0 +1,447 @@
+/* Universal selector */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #e2d9d2;
+}
+
+/* add style to header (adds padding, font style, background color and font color */
+.header {
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #7f7d7c;
+  color: #eff5f9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Name {
+  font-size: 65%;
+  font-family: fantasy;
+  color: #1b1816;
+  float: right;
+  margin-top: 5px;
+}
+
+/* content in h1 header is on main axis with display set to inline-block */
+.header h1 {
+  display: inline-block;
+  font-size: 42px;
+}
+/* add style to header navigation (adds padding to top, margin, font size and font color and float to right hand side */
+.header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    "sans-serif";
+  font-size: 25px;
+}
+
+.header2 {
+  width: 100%;
+  background-color: #c39066;
+  height: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header nav ul {
+  list-style-type: none;
+}
+
+.header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+  text-decoration: underline;
+  margin-top: 5px;
+}
+
+nav a:hover {
+  color: #bd6925;
+}
+
+a {
+  color: #eff5f9;
+  text-decoration: none;
+}
+/* paragraph font size 18px */
+p {
+  font-size: 19px;
+  margin: 10px 0;
+}
+
+.float-left {
+  float: left;
+  margin-right: 25px;
+}
+
+.float-right {
+  float: right;
+  margin-left: 25px;
+}
+.content {
+  margin-left: 20px;
+  padding: 10px;
+  display: flex;
+  /* Forces elements to the next line if they don't fit */
+  flex-wrap: wrap;
+  margin-top: 2%;
+  width: 97.5%;
+  justify-content: space-around;
+}
+
+.about-me {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #7f7d7c;
+  color: #eff5f9;
+  width: 85%;
+  flex-grow: 1;
+}
+.prof {
+  margin-bottom: 20px;
+  height: 300px;
+  background-color: #7f7d7c;
+  width: 14%;
+  min-width: 200px;
+  max-width: 230px;
+}
+
+#profile-image {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.work-samples {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 1250px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #7f7d7c;
+  color: #eff5f9;
+  width: 100%;
+}
+
+.resume {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #7f7d7c;
+  color: #eff5f9;
+  width: 49%;
+  margin-right: 1%;
+  flex-grow: 1;
+}
+.contact-me {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #7f7d7c;
+  color: #eff5f9;
+  width: 49%;
+  margin-left: 1%;
+  flex-grow: 1;
+}
+
+.contact-me li {
+  margin: 10px 0;
+  font-size: 19px;
+}
+
+.resume li :hover,
+.resume li :focus {
+  color: #bd6925;
+  text-decoration: underline;
+}
+
+.contact-me li :hover,
+.contact-me li :focus {
+  color: #bd6925;
+  text-decoration: underline;
+}
+
+/* max-height, font-size and margin-bottom for img and h2 heading remain consistent when webpage window size is altered */
+.about-me img {
+  max-height: 200px;
+}
+
+.work-samples img {
+  max-height: 200px;
+}
+
+.contact-me img {
+  max-height: 200px;
+}
+
+.resume img {
+  max-height: 200px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 38px;
+}
+
+h3 {
+  font-size: 18px;
+  color: #eff5f9;
+}
+
+.container--portfolio {
+  width: 100%;
+  height: 510px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box1 {
+  width: 97%;
+  margin-bottom: 2%;
+  margin-top: 2%;;
+  height: 500px;
+  border: 8px solid #2a2725;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-image {
+  min-height: 100%;
+  min-width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.background-imagebox1 {
+  min-height: 100%;
+  min-width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.box1:hover {
+  /* opacity: 70%; */
+  border: 9px solid #bd6925;
+}
+
+.smallbox1:hover {
+  background: #bd6925;
+}
+
+.smallbox1 {
+  position: absolute;
+  width: 150px;
+  height: 75px;
+  background: #2a2725;
+  padding: 10px;
+  left: 0%;
+  bottom: 10%;
+}
+
+
+/* footer padding set to 30px and aligned to center */
+.footer {
+  padding: 30px;
+  clear: both;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+}
+
+/* footer set to font size of 20px */
+.footer h4 {
+  font-size: 20px;
+  color: #bd6925;
+}
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  50% {
+    transform: rotate(16deg);
+  }
+}
+@media screen and (max-width: 1600px) {
+  .container--portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content;
+  }
+  .about-me {
+    text-align: center;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .prof {
+    width: 19%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact-me {
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .resume {
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .work-samples {
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    /* display: inline-block; */
+  }
+  .box1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (max-width: 850px) {
+    .container--portfolio {
+      display: inline-block;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 100%;
+      height: fit-content;
+    }
+
+    .header nav {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .header h1 {
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 30px;
+    }
+
+    #contact-image {
+      margin-left: auto;
+      margin-right: auto;
+      width: 25%;
+    }
+
+    #resume-image {
+      margin-left: auto;
+      margin-right: auto;
+      width: 25%;
+    }
+    #profile-image {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .prof {
+      width: 40%;
+      height: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      border-color: #bd6925;
+      border-style: solid;
+      border-width: 3px;
+    }
+
+    .about-me {
+      text-align: center;
+      flex-direction: column;
+      height: fit-content;
+      justify-content: space-around;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      border-radius: 10px;
+      border-color: #bd6925;
+      border-style: solid;
+      border-width: 3px;
+      flex-wrap: wrap-reverse;
+    }
+    .resume {
+      justify-content: space-around;
+      width: 100%;
+      height: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px;
+      border-color: #bd6925;
+      border-style: solid;
+      border-width: 3px;
+    }
+    .contact-me {
+      justify-content: space-around;
+      width: 100%;
+      height: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px;
+      border-color: #bd6925;
+      border-style: solid;
+      border-width: 3px;
+      text-align: left;
+    }
+
+    .work-samples {
+      justify-content: space-around;
+      width: 100%;
+      height: fit-content;
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px;
+      border-color: #bd6925;
+      border-style: solid;
+      border-width: 3px;
+    }
+
+    .box1 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    body {
+      background-color: #ecf9ff;
+    }
+  }
+}
