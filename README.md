@@ -18,8 +18,8 @@ Updated LinkedIn profile
 
 
  <!------Respority link------->
- https://github.com/aali9/UpdatedPortfolio
+ https://github.com/aali9/UpdatedPortfolio2
 
  <!------Webpage Url link------->
 
-https://aali9.github.io/UpdatedPortfolio/
+https://aali9.github.io/UpdatedPortfolio2/
